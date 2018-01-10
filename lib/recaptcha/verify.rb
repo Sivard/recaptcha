@@ -28,7 +28,7 @@ module Recaptcha
             attribute,
             options[:message],
             "recaptcha.errors.verification_failed",
-            "reCAPTCHA verification failed, please try again."
+            I18n.t("recaptcha.errors.verification_failed")
           )
           false
         end
@@ -39,7 +39,7 @@ module Recaptcha
             attribute,
             options[:message],
             "recaptcha.errors.recaptcha_unreachable",
-            "Oops, we failed to validate your reCAPTCHA response. Please try again."
+            I18n.t("recaptcha.errors.recaptcha_unreachable")
           )
           false
         else
